@@ -26,13 +26,20 @@ export default {
       align-items: center;
       gap: 10px;
       width: 560px;
-      height: 670px;
+      height: 709px;
       background: rgba(252, 252, 252, 0.02);
       border: 1px solid rgba(157, 157, 157, 0.05);
       border-radius: 10px;
       cursor: pointer;
       transition: .3s;
     }
+
+    @media screen and (max-width: 1440px) {
+        .character-none {
+          width: 372px;
+          height: 529px;
+        }
+      }
 
     .character-none:hover {
       background: rgba(252, 252, 252, 0.05);

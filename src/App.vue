@@ -1,6 +1,21 @@
 <template>
   <div class="select-character">
+    <CharacterItem/>
     <CharacterItem
+      :status="'block'"
+      :level="75"
+      :number="1"
+      :hoursInGame="666"
+      :cash="500000"
+      :moneyInBank="1"
+      :organization="'LSPD'"
+      :characterName="'Demon'"
+
+      :reasonBlock="'xacxaax'"
+      :administratorName="'administrator'"
+      :unlockTime="'6/7 23:54'"
+    />
+    <!-- <CharacterItem
       :status="'default'"
       :level="75"
       :number="1"
@@ -10,18 +25,18 @@
       :organization="'LSPD'"
       :characterName="'Demon'"
     />
+
     <CharacterItem
-      :status="'deleting'"
+      :status="'default'"
       :level="75"
       :number="1"
       :hoursInGame="666"
       :cash="500000"
       :moneyInBank="1"
-      :organization="LSPD"
+      :organization="'LSPD'"
       :characterName="'Demon'"
+    /> -->
 
-      :deletedTime="'6/12 23:54'"
-    />
     
   </div>
   
@@ -59,16 +74,22 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .select-character {
-  width: 91%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 40px;
-  height: 100%;
-  margin-left: 9%;
+  height: auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .select-character {
+    gap: 20px;
+  }
 }
 
 

@@ -69,13 +69,23 @@
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 50px;
-        width: 560px;
-        height: 670px;
+        padding-bottom: 25px;
+        width: 460px;
+
         background: linear-gradient(164.5deg, rgba(37, 66, 109, 0.45) -15.88%, rgba(5, 10, 18, 0) 100%);
         border: 1px solid rgba(157, 157, 157, 0.05);
         border-radius: 10px;
         cursor: pointer;
         transition: .3s;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .character-default {
+          width: 300px;
+          padding-left: 35px;
+          padding-right: 35px;
+          padding-top: 35px;
+        }
       }
       
       .header {
@@ -99,14 +109,27 @@
         color: rgba(252, 252, 252, 0.9);
       }
 
+      @media screen and (max-width: 1440px) {
+        .header__logo {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+
       .header__name {
         font-weight: 900;
         font-size: 48px;
         line-height: 59px;
         letter-spacing: 0.05em;
-        width: 300px;
         text-transform: uppercase;
         color: rgba(252, 252, 252, 0.9);
+      }
+
+      @media screen and (max-width: 1440px) {
+        .header__name {
+          font-size: 32px;
+          line-height: 40px;
+        }
       }
 
       .header__number {
@@ -118,9 +141,22 @@
         color: rgba(252, 252, 252, 0.25);
       }
 
+      @media screen and (max-width: 1440px) {
+        .header__number {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+
       .header__level {
         position: relative;
         margin-right: 10px;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .header__level {
+          margin-right: 6px;
+        }
       }
 
       .header__level-indicator{
@@ -135,6 +171,14 @@
         height: 90px;
         border-radius: 50%;
         position: relative;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .header__level-indicator {
+          width: 60px;
+          height: 60px;
+          font-size: 18px;
+        }
       }
 
       .header__level-indicator::before{
@@ -171,6 +215,12 @@
         transform: rotate(90deg);
       }
 
+      @media screen and (max-width: 1440px) {
+        .header__level-title {
+          right: -70%;
+        }
+      }
+
       .content {
         margin-top: 60px;
         display: flex;
@@ -190,11 +240,25 @@
         height: 50px;
       }
 
+      @media screen and (max-width: 1440px) {
+        .character-prop {
+          height: 35px;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
+      }
+
       .character-prop__label {
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
         color: rgba(255, 255, 255, 0.25);
+      }
+
+      @media screen and (max-width: 1440px) {
+        .character-prop__label {
+          font-size: 12px;
+        }
       }
 
       .character-prop__value {
@@ -204,12 +268,24 @@
         color: #FFFFFF;
       }
 
+      @media screen and (max-width: 1440px) {
+        .character-prop__value {
+          font-size: 14px;
+        }
+      }
+
       .controls {
         margin-top: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .controls {
+          margin-top: 27px;
+        }
       }
 
       .button-select {
@@ -228,6 +304,13 @@
         text-transform: uppercase;
         color: #FFFFFF;
         transition: all .3s;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .button-select {
+          height: 55px;
+          font-size: 18px;
+        }
       }
 
       .button-select:hover {
@@ -249,6 +332,14 @@
         letter-spacing: 0.05em;
         color: rgba(255, 255, 255, 0.25);
         transition: .3s;
+      }
+
+      @media screen and (max-width: 1440px) {
+        .button-delet {
+          width: 120px;
+          height: 30px;
+          font-size: 10px;
+        }
       }
 
       .button-delet:hover {
